@@ -1,9 +1,20 @@
-import React from 'react'
+import { Box, CssBaseline, Stack } from "@mui/material";
+import { theme } from "./theme";
+import { ThemeProvider } from "@mui/material";
 
-const App = () => {
-  return (
-                 <div>App</div>
-  )
-}
+import { Navbar, LandingPage, Sidebar } from "./components";
 
-export default App
+const App = () => (
+  <ThemeProvider theme={theme}>
+    <CssBaseline />
+    <Box>
+      <Navbar />
+      <Stack direction="row" spacing={2} justifyContent="space-between">
+        <Sidebar />
+        <LandingPage />
+      </Stack>
+    </Box>
+  </ThemeProvider>
+);
+
+export default App;
