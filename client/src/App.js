@@ -1,8 +1,8 @@
-import { Box, CssBaseline, Stack } from "@mui/material";
-import { theme } from "./theme";
-import { ThemeProvider } from "@mui/material";
+import { Box, CssBaseline, Stack } from '@mui/material';
+import { theme } from './theme';
+import { ThemeProvider } from '@mui/material';
 
-import { Navbar, LandingPage, Sidebar } from "./components";
+import { Navbar, LandingPage, Sidebar } from './components';
 
 const App = () => (
   <ThemeProvider theme={theme}>
